@@ -563,7 +563,7 @@ function crearPDF()
     var textoDistribuidor = distribuidor.options[distribuidor.selectedIndex].text;
 
     tituloInforme.innerHTML = 'informe&nbsp;de&nbsp;'+textoTipoInforme;                       
-    tituloDistribuidor.innerHTML = 'distribuidor:&nbsp;'+textoDistribuidor;            
+    tituloDistribuidor.innerHTML = 'usuario:&nbsp;'+textoDistribuidor;            
     tituloSemana.innerHTML = 'semana&nbsp;n°&nbsp;'+textoSemana;
 
     var fecha = new Date();
