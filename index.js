@@ -97,11 +97,7 @@ codigo.addEventListener('input', function()
 
         if(codigo.value.length == 5)
         {
-            setTimeout(
-                function()  {
-                                buscarItem();
-                            }
-            ,200);
+            setTimeout(function(){buscarItem();},200);
         }
         else
         {
@@ -653,4 +649,5 @@ function semanaActual()
 window.onload = function(event) 
 {
     semanaActual();
+    codigo.focus();
 }
