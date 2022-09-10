@@ -97,7 +97,7 @@ codigo.addEventListener('input', function()
 
         if(codigo.value.length == 5)
         {
-            setTimeout(function(){buscarItem();},200);
+            setTimeout(function(){buscarItem();},200);        
         }
         else
         {
@@ -563,7 +563,7 @@ function crearPDF()
     var textoDistribuidor = distribuidor.options[distribuidor.selectedIndex].text;
 
     tituloInforme.innerHTML = 'informe&nbsp;de&nbsp;'+textoTipoInforme;                       
-    tituloDistribuidor.innerHTML = 'usuario:&nbsp;'+textoDistribuidor;            
+    tituloDistribuidor.innerHTML = 'distribuidor:&nbsp;'+textoDistribuidor;            
     tituloSemana.innerHTML = 'semana&nbsp;n°&nbsp;'+textoSemana;
 
     var fecha = new Date();
@@ -649,5 +649,4 @@ function semanaActual()
 window.onload = function(event) 
 {
     semanaActual();
-    codigo.focus();
 }
