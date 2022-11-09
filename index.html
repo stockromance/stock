@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Stock</title>
+        <title>Informe</title>
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="index.css">        
     </head>
@@ -19,9 +19,9 @@
                         <option value="0" selected disabled hidden></option>
                         <option value="1">inventario</option>
                         <option value="2">devolucion</option>
-                        <option value="3">productividad reembalaje</option>
+                        <option value="3">recepcion de carga</option>
                         <option value="4">productos con defectos</option>
-                        <option value="5">recepcion de carga</option>
+                        <option value="5">productividad en reembalaje</option>
                     </select>
                 </div>                
                 <div class="box">
@@ -204,13 +204,16 @@
         </div>   
         <div id="modal-2">
             <div id="m2-contenido">
-                <div id="m2-titulo">ingresar item 1 en 1</div>
+                <div id="m2-encabezado">
+                    <div id="m2-titulo">ingresar item 1 en 1</div>
+                    <button id="m2-cerrar"><i class="far fa-times-circle"></i></button>
+                </div>                
                 <div id="m2-box">
                     <input type="number" id="m2-codigo" placeholder="codigo">
+                    <input type="number" id="m2-cod" disabled hidden>
                     <input type="text" id="m2-nombre" disabled>
                     <button id="m2-agregar">agregar</button>
-                    <button id="m2-cerrar">cerrar</button>
-                </div>                
+                </div> 
                 <table id="m2-tabla">
                     <thead>
                         <tr>
@@ -221,7 +224,7 @@
                     </thead>
                     <tbody id="m2-tbody">
                     </tbody>
-                </table>                
+                </table>       
             </div>
         </div>  
         <div id="modal-3">
